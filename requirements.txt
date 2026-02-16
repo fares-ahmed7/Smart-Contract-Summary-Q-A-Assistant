@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+gradio
+langchain
+langserve
+langchain-openai
+langchain-huggingface
+chromadb
+sentence-transformers
+python-docx
+PyMuPDF
+unstructured
+python-dotenv
