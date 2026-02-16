@@ -64,9 +64,3 @@ The system extracts document content, chunks it, creates embeddings, stores them
 ├── .env                 # Configuration file for API keys (e.g., HF_TOKEN)
 ├── requirements.txt     # List of required Python libraries
 └── README.md            # Project documentation and setup guide
-
-
-
-
-
-
