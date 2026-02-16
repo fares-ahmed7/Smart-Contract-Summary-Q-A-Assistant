@@ -58,7 +58,12 @@ The system extracts document content, chunks it, creates embeddings, stores them
 ---
 
 ## 📂 Project Structure
-
+├── chroma_db_storage/   # The vector database containing embedded document chunks
+├── Backend.ipynb        # Server-side logic and LLM configuration
+├── Frontend.ipynb       # Gradio UI and document processing pipeline
+├── .env                 # Configuration file for API keys (e.g., HF_TOKEN)
+├── requirements.txt     # List of required Python libraries
+└── README.md            # Project documentation and setup guide
 
 
 
