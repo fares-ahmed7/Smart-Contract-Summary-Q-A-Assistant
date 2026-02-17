@@ -74,10 +74,10 @@ git clone <YOUR_REPOSITORY_LINK>
 cd Smart-Contract-Summary-Q-A-Assistant
 
 ### 2️⃣ Create Virtual Environment
-
+`bash
 python -m venv .venv
 source .venv/bin/activate      # Linux / Mac
-.venv\Scripts\activate         # Windows
+.venv\Scripts\activate         # Windows`
 
 ### 3️⃣ Install Dependencies
 
