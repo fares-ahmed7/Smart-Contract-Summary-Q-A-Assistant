@@ -25,14 +25,14 @@ The system extracts document content, splits it into semantic chunks, generates 
 ## 🏗 System Architecture
 
 ### 🖥 Frontend
-- Gradio chat interface
-- File ingestion pipeline
-- User interaction controller
+- Gradio chat interface  
+- File ingestion pipeline  
+- User interaction controller  
 
 ### ⚙ Backend
-- FastAPI microservice
-- LangServe routing
-- LLM inference engine
+- FastAPI microservice  
+- LangServe routing  
+- LLM inference engine  
 
 ### 🧠 AI Pipeline
 
@@ -62,7 +62,17 @@ The system extracts document content, splits it into semantic chunks, generates 
 ---
 
 ## 📂 Project Structure
-─ chroma_db_storage/     # Vector database storage ├── Backend.ipynb          # Backend server logic ├── Frontend.ipynb         # Gradio interface + document pipeline ├── .env                   # API keys configuration ├── requirements.txt       # Dependencies └── README.md              # Documentation
+
+```
+Smart-Contract-Summary-Q-A-Assistant
+│
+├── chroma_db_storage/     # Vector database storage
+├── Backend.ipynb          # Backend server logic
+├── Frontend.ipynb         # Gradio interface + document pipeline
+├── .env                   # API keys configuration
+├── requirements.txt       # Dependencies
+└── README.md              # Documentation
+```
 
 ---
 
@@ -70,27 +80,65 @@ The system extracts document content, splits it into semantic chunks, generates 
 
 ### 1️⃣ Clone Repository
 
+```bash
 git clone <YOUR_REPOSITORY_LINK>
 cd Smart-Contract-Summary-Q-A-Assistant
+```
+
+---
 
 ### 2️⃣ Create Virtual Environment
-`bash
+
+```bash
 python -m venv .venv
-source .venv/bin/activate      # Linux / Mac
-.venv\Scripts\activate         # Windows`
+
+# Linux / Mac
+source .venv/bin/activate
+
+# Windows
+.venv\Scripts\activate
+```
+
+---
 
 ### 3️⃣ Install Dependencies
 
+```bash
 pip install -r requirements.txt
+```
+
+---
 
 ### 4️⃣ Configure Environment Variables
-Create .env file:
+
+Create a `.env` file:
+
+```env
 HF_TOKEN=your_huggingface_token
+```
 
-### ▶️ Running The Project
-Start Backend Server
+---
+
+## ▶️ Running The Project
+
+### Start Backend Server
+
+```bash
 uvicorn server:app --port 9017
+```
 
-Start Frontend Interface
-Run:
-Frontend.ipynb
+---
+
+### Start Frontend Interface
+
+1. Open `Frontend.ipynb` using Jupyter Notebook or VS Code  
+2. Run all cells  
+3. The Gradio interface will launch automatically  
+
+---
+
+## 🚀 Quick Start
+
+1. Upload a document  
+2. Ask questions about the document  
+3. Receive AI answers with page citations
