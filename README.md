@@ -1,66 +1,96 @@
-# 🚀 Smart-Contract-Summary-Q-A-Assistant
+# 🚀 Smart Contract Summary & Q/A Assistant
 
 ## 📌 Overview
-This project is a small-scale Retrieval-Augmented Generation (RAG) web application that allows users to upload contracts, insurance policies, reports, or other long documents and interact with them using an AI conversational assistant.
 
-The system extracts document content, chunks it, creates embeddings, stores them in a vector database, and enables chat-based question answering with guardrails and source citations.
+Smart Contract Summary & Q/A Assistant is a Retrieval-Augmented Generation (RAG) based web application that allows users to upload long documents such as contracts, insurance policies, and reports, then interact with them through an AI conversational assistant.
+
+The system extracts document content, splits it into semantic chunks, generates embeddings, stores them in a vector database, and enables intelligent question answering with source citations and conversation memory.
 
 ---
 
 ## 🎯 Features
 
-- Upload PDF and DOCX documents  
-- Document chunking and embedding  
-- Semantic similarity retrieval  
-- AI-powered question answering  
-- Page-number citations  
-- Conversation memory support  
-- Local microservice architecture  
-- Interactive chat interface  
+✅ Upload PDF and DOCX documents  
+✅ Automatic document parsing and chunking  
+✅ Semantic similarity search  
+✅ AI-powered conversational question answering  
+✅ Page-number source citations  
+✅ Hybrid conversation memory (short-term + vector memory)  
+✅ Guardrails for safe responses  
+✅ Local microservice architecture  
+✅ Interactive chat interface  
 
 ---
 
-## 🏗 Architecture
+## 🏗 System Architecture
 
-### Frontend
-- Gradio user interface  
-- File ingestion pipeline  
-- Retrieval controller  
+### 🖥 Frontend
+- Gradio chat interface
+- File ingestion pipeline
+- User interaction controller
 
-### Backend
-- FastAPI microservice  
-- LangServe routing  
-- LLM inference  
+### ⚙ Backend
+- FastAPI microservice
+- LangServe routing
+- LLM inference engine
 
-### AI Pipeline
-- Text extraction  
-- Chunking  
-- Embeddings  
-- Vector storage (Chroma)  
-- Retrieval  
-- Answer generation  
+### 🧠 AI Pipeline
+
+1. Text extraction from uploaded documents  
+2. Text chunking  
+3. Embedding generation  
+4. Vector storage using Chroma  
+5. Semantic retrieval  
+6. Answer generation using LLM  
 
 ---
 
 ## 🛠 Technology Stack
 
-- FastAPI  
-- LangChain  
-- LangServe  
-- Gradio  
-- Chroma Vector Database  
-- Sentence Transformers Embeddings  
-- PyMuPDF & python-docx loaders  
-- HuggingFace LLM  
-- Unstructured  
-- Python-dotenv  
+| Category | Tools |
+|----------|------------|
+| Backend | FastAPI |
+| RAG Framework | LangChain + LangServe |
+| Frontend | Gradio |
+| Vector Database | Chroma |
+| Embeddings | Sentence Transformers |
+| LLM | HuggingFace Models |
+| Document Loaders | PyMuPDF, python-docx |
+| Parsing | Unstructured |
+| Environment Management | Python-dotenv |
 
 ---
 
 ## 📂 Project Structure
-├── chroma_db_storage/   # The vector database containing embedded document chunks
-├── Backend.ipynb        # Server-side logic and LLM configuration
-├── Frontend.ipynb       # Gradio UI and document processing pipeline
-├── .env                 # Configuration file for API keys (e.g., HF_TOKEN)
-├── requirements.txt     # List of required Python libraries
-└── README.md            # Project documentation and setup guide
+─ chroma_db_storage/     # Vector database storage ├── Backend.ipynb          # Backend server logic ├── Frontend.ipynb         # Gradio interface + document pipeline ├── .env                   # API keys configuration ├── requirements.txt       # Dependencies └── README.md              # Documentation
+
+---
+
+## ⚙️ Installation
+
+### 1️⃣ Clone Repository
+
+git clone <YOUR_REPOSITORY_LINK>
+cd Smart-Contract-Summary-Q-A-Assistant
+
+### 2️⃣ Create Virtual Environment
+
+python -m venv .venv
+source .venv/bin/activate      # Linux / Mac
+.venv\Scripts\activate         # Windows
+
+### 3️⃣ Install Dependencies
+
+pip install -r requirements.txt
+
+### 4️⃣ Configure Environment Variables
+Create .env file:
+HF_TOKEN=your_huggingface_token
+
+### ▶️ Running The Project
+Start Backend Server
+uvicorn server:app --port 9017
+
+Start Frontend Interface
+Run:
+Frontend.ipynb
