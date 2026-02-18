@@ -81,7 +81,7 @@ Smart-Contract-Summary-Q-A-Assistant
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone <https://github.com/fares-ahmed7/Smart-Contract-Summary-Q-A-Assistant.git>
+git clone https://github.com/fares-ahmed7/Smart-Contract-Summary-Q-A-Assistant.git
 cd Smart-Contract-Summary-Q-A-Assistant
 ```
 
