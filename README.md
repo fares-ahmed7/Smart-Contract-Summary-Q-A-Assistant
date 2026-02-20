@@ -118,6 +118,7 @@ LLM (HuggingFace Inference API)
 ---
 
 ## 📂 Project Structure
+```
 Smart-Contract-Summary-Q-A-Assistant
 │
 ├── server_app.py # FastAPI backend + RAG & evaluation chains
@@ -126,7 +127,7 @@ Smart-Contract-Summary-Q-A-Assistant
 ├── .env # HuggingFace API token
 ├── requirements.txt # Dependencies
 └── README.md # Documentation
-
+```
 
 ---
 
