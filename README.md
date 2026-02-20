@@ -56,6 +56,7 @@ Evaluation can be applied to:
 ---
 
 ## 🏗 System Architecture
+```
 User
  │
  ▼
@@ -74,7 +75,7 @@ FastAPI Backend (LangServe)
  │
  ▼
 LLM (HuggingFace Inference API)
-
+```
 ---
 
 ## 🖥 Frontend (Gradio)
