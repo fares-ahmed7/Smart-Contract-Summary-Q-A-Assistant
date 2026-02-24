@@ -1,4 +1,4 @@
-# 🚀 Smart Contract Summary & Q&A Assistant (RAG + Evaluation)
+# 🚀 Smart Contract Assistant (RAG + Evaluation)
 
 A local Retrieval-Augmented Generation (RAG) system with built-in evaluation for
 question answering over long documents (PDF / DOCX), using strict anti-hallucination guardrails.
