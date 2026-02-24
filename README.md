@@ -137,7 +137,7 @@ Smart-Contract-Assistant/
 ### 1️⃣ Clone the repository
 ```
 git clone https://github.com/fares-ahmed7/Smart-Contract-Assistant.git
-cd Smart-Contract-Summary-Q-A-Assistant
+cd Smart-Contract-Assistant
 ```
 
 ### 2️⃣ Create Virtual Environment
