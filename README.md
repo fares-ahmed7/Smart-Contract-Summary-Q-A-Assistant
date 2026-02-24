@@ -61,7 +61,7 @@ Evaluation can be applied to:
 ---
 
 ## 🏗 System Architecture
-
+```
 User
 ↓
 Gradio UI (app.py)
@@ -74,7 +74,7 @@ FastAPI Backend (server_app.py)
 - Evaluation chain
 ↓
 LLM (HuggingFace Inference API)
-
+```
 ---
 
 ## 🖥 Frontend (app.py)
@@ -119,7 +119,7 @@ Environment Management: python-dotenv
 ---
 
 ## 📂 Project Structure
-
+```
 Smart-Contract-Summary-Q-A-Assistant/
 ├── app.py
 ├── server_app.py
@@ -127,37 +127,47 @@ Smart-Contract-Summary-Q-A-Assistant/
 ├── .gitignore
 ├── .env
 └── README.md
-
+```
 ---
 
-## ⚙ Installation
+### ⚙ Installation
 
-Clone the repository:
+## 1️⃣ Clone the repository
+```
 git clone https://github.com/fares-ahmed7/Smart-Contract-Summary-Q-A-Assistant.git
 cd Smart-Contract-Summary-Q-A-Assistant
+```
 
-Create virtual environment:
+## 2️⃣ Create Virtual Environment
+```
 python -m venv .venv
 source .venv/bin/activate        # Linux / macOS
 .venv\Scripts\activate           # Windows
+```
 
-Install dependencies:
+## 3️⃣ Install Dependencies
+```
 pip install -r requirements.txt
+```
 
+## 4️⃣ Configure Environment Variables
 Create .env file:
+```
 HF_TOKEN=your_huggingface_token_here
-
+```
 ---
 
-## ▶️ Running the Project
+### ▶️ Running the Project
 
-Start backend server:
+## 1️⃣ Start backend server
+```
 uvicorn server_app:app --host 127.0.0.1 --port 9017
-
-Start frontend (in another terminal):
-Bash
+```
+## 2️⃣ Start the Frontend (Gradio UI) 
+(in another terminal):
+```Bash
 python app.py
-
+```
 The Gradio interface will open automatically in your browser.
 
 ---
