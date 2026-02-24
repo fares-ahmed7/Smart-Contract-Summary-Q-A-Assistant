@@ -130,13 +130,13 @@ def evaluate_last_n_responses(n: int):
         if "error" in data:
             return data["error"]
 
-        return "\n".join([f"⭐ {k}: {v}" for k, v in data.items()])
+        return "\n".join([f" {k}: {v}" for k, v in data.items()])
 
     except Exception as e:
         return f"❌ Eval Error: {str(e)}"
 
 with gr.Blocks(theme=gr.themes.Soft()) as demo:
-    gr.Markdown("# 🚀 Smart Contract Summary & Q&A Assistant")
+    gr.Markdown("# 🚀 Smart Contract Assistant")
 
     with gr.Row():
         file_in = gr.File(label="Upload PDF/DOCX", file_count="multiple")
