@@ -1,9 +1,5 @@
 # 🚀 Smart Contract Summary & Q&A Assistant (RAG + Evaluation)
 
-![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-green.svg)
-![LangChain](https://img.shields.io/badge/LangChain-Latest-orange.svg)
-
 ## 📌 Overview
 **Smart Contract Summary & Q&A Assistant** is a local Retrieval-Augmented Generation (RAG) system with a built-in evaluation framework. 
 It allows users to upload long documents (PDF/DOCX), ask precise questions, and receive answers strictly grounded in the document content, complete with **page-level citations** and **automatic quality scoring**.
@@ -42,12 +38,14 @@ After answering, the system evaluates the response using:
 ---
 
 ## 📂 Project Structure
+```
 Smart-Contract-Summary-Q-A-Assistant/
 ├── server_app.py      # FastAPI backend + RAG & Evaluation chains
 ├── app.py             # Gradio UI (Frontend)
 ├── .gitignore         # Excludes local storage, env files, and cache
 ├── requirements.txt   # Project dependencies
 └── README.md          # Documentation
+```
 
 ---
 
@@ -66,36 +64,36 @@ Smart-Contract-Summary-Q-A-Assistant/
 
 ## 2️⃣ Environment Setup
 
-\`\`\`bash
+```bash
 python -m venv .venv
 # Activate:
 # Windows: .venv\Scripts\activate
 # Linux/macOS: source .venv/bin/activate
 pip install -r requirements.txt
-\`\`\`
+```
 
 ---
 
 ## 3️⃣ Configuration
 Create a `.env` file in the root directory:
-\`\`\`env
+```env
 HF_TOKEN=your_huggingface_token_here
-\`\`\`
+```
 
 ---
 
 ## ▶️ Running the Application
 
 ### Step 1: Start Backend Server
-\`\`\`bash
+```bash
 uvicorn server_app:app --host 127.0.0.1 --port 9017
-\`\`\`
+```
 
 ### Step 2: Launch Frontend (Gradio)
 In a separate terminal, run:
-\`\`\`bash
+```bash
 python app.py
-\`\`\`
+```
 The Gradio interface will open in your browser automatically.
 
 ---
