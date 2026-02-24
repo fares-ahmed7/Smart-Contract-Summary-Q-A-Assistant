@@ -28,7 +28,7 @@ The system is designed with **strong guardrails** to prevent hallucinations and 
 3. **Retrieval:** Relevant context is fetched from ChromaDB based on user query.
 4. **Generation:** LLaMA 3.1 8B generates an answer based *only* on retrieved context.
 
-### 🔹 Evaluation Metrics (LLM-as-a-Judge)
+### 🔹 Evaluation Metrics
 After answering, the system evaluates the response using:
 * **Answer Accuracy:** Does it answer the user's intent?
 * **Faithfulness:** Is the answer derived solely from the provided context?
@@ -41,7 +41,7 @@ After answering, the system evaluates the response using:
 ```
 Smart-Contract-Summary-Q-A-Assistant/
 ├── server_app.py      # FastAPI backend + RAG & Evaluation chains
-├── app.py             # Gradio UI (Frontend)
+├── app.py             # # Gradio UI + document pipeline
 ├── .gitignore         # Excludes local storage, env files, and cache
 ├── requirements.txt   # Project dependencies
 └── README.md          # Documentation
@@ -51,15 +51,19 @@ Smart-Contract-Summary-Q-A-Assistant/
 
 ## 🛠 Technology Stack
 
-| Category       | Tool                                             |
-|----------------|-------------------------------------------------|
-| Backend API    | FastAPI + LangServe                              |
-| RAG Framework  | LangChain                                        |
-| Frontend       | Gradio                                           |
-| Vector Store   | ChromaDB                                         |
-| Embeddings     | sentence-transformers/all-MiniLM-L6-v2          |
-| LLM Model      | LLaMA 3.1 8B Instruct (via HF Inference API)   |
 
+| Category        | Tool                                           |
+|-----------------|-----------------------------------------------|
+| Backend API     | FastAPI                                       |
+| RAG Framework   | LangChain + LangServe                          |
+| Frontend        | Gradio                                        |
+| Vector Store    | ChromaDB                                      |
+| Embeddings      | sentence-transformers/all-MiniLM-L6-v2       |
+| LLM Provider    | HuggingFace Inference API                     |
+| LLM Model       | LLaMA 3.1 8B Instruct                         |
+| Document Loaders| PyMuPDF, Unstructured                          |
+| Evaluation      | LLM-based RAG Evaluator                        |
+| Env Management  | python-dotenv                                 |
 ---
 
 ## 2️⃣ Environment Setup
