@@ -11,7 +11,7 @@ The project is fully script-based (no notebooks) and runs via:
 
 ## 📌 Overview
 
-Smart Contract Summary & Q&A Assistant allows users to upload long documents,
+Smart Contract Assistant allows users to upload long documents,
 ask precise questions, and receive answers strictly grounded in the document
 content with page-level citations and automatic evaluation.
 
@@ -122,7 +122,7 @@ Enforced rules:
 
 ## 📂 Project Structure
 ```
-Smart-Contract-Summary-Q-A-Assistant/
+Smart-Contract-Assistant/
 ├── app.py
 ├── server_app.py
 ├── requirements.txt
@@ -136,7 +136,7 @@ Smart-Contract-Summary-Q-A-Assistant/
 
 ### 1️⃣ Clone the repository
 ```
-git clone https://github.com/fares-ahmed7/Smart-Contract-Summary-Q-A-Assistant.git
+git clone https://github.com/fares-ahmed7/Smart-Contract-Assistant.git
 cd Smart-Contract-Summary-Q-A-Assistant
 ```
 
