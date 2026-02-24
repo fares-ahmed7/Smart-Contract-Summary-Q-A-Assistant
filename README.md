@@ -105,16 +105,18 @@ Enforced rules:
 
 ## 🛠 Technology Stack
 
-Backend API: FastAPI  
-RAG Framework: LangChain  
-Frontend: Gradio  
-Vector Store: Chroma  
-Embeddings: sentence-transformers/all-MiniLM-L6-v2  
-LLM Provider: HuggingFace Inference API  
-LLM Model: LLaMA 3.1 8B Instruct  
-Document Loaders: PyMuPDF, Unstructured  
-Evaluation: LLM-based RAG evaluator  
-Environment Management: python-dotenv  
+| Category              | Technology / Tool                     |
+|-----------------------|---------------------------------------|
+| Backend API           | FastAPI                               |
+| RAG Framework         | LangChain + LangServe                 |
+| Frontend              | Gradio                                |
+| Vector Store          | Chroma                                |
+| Embeddings            | sentence-transformers/all-MiniLM-L6-v2|
+| LLM Provider          | HuggingFace Inference API             |
+| LLM Model             | LLaMA 3.1 8B Instruct                 |
+| Document Loaders      | PyMuPDF, Unstructured                 |
+| Evaluation            | LLM-based RAG Evaluator               |
+| Environment Management| python-dotenv                         |  
 
 ---
 
@@ -130,40 +132,40 @@ Smart-Contract-Summary-Q-A-Assistant/
 ```
 ---
 
-### ⚙ Installation
+## ⚙ Installation
 
-## 1️⃣ Clone the repository
+### 1️⃣ Clone the repository
 ```
 git clone https://github.com/fares-ahmed7/Smart-Contract-Summary-Q-A-Assistant.git
 cd Smart-Contract-Summary-Q-A-Assistant
 ```
 
-## 2️⃣ Create Virtual Environment
+### 2️⃣ Create Virtual Environment
 ```
 python -m venv .venv
 source .venv/bin/activate        # Linux / macOS
 .venv\Scripts\activate           # Windows
 ```
 
-## 3️⃣ Install Dependencies
+### 3️⃣ Install Dependencies
 ```
 pip install -r requirements.txt
 ```
 
-## 4️⃣ Configure Environment Variables
+### 4️⃣ Configure Environment Variables
 Create .env file:
 ```
 HF_TOKEN=your_huggingface_token_here
 ```
 ---
 
-### ▶️ Running the Project
+## ▶️ Running the Project
 
-## 1️⃣ Start backend server
+### 1️⃣ Start backend server
 ```
 uvicorn server_app:app --host 127.0.0.1 --port 9017
 ```
-## 2️⃣ Start the Frontend (Gradio UI) 
+### 2️⃣ Start the Frontend (Gradio UI) 
 (in another terminal):
 ```Bash
 python app.py
@@ -183,12 +185,5 @@ The Gradio interface will open automatically in your browser.
 ---
 
 ## 🧑‍💻 Author
-
-Fares Ahmed
-AI / ML Engineer
-
----
-
-## 🧑‍💻 Author
 **Fares Ahmed**  
-AI/ML Engineer
+- AI/ML Engineer
