@@ -14,7 +14,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = FastAPI(
-    title="Smart Contract Summary & Q&A Assistant Server",
+    title="Smart Contract Assistant Server",
     description="AI server for Smart Contract Q&A with evaluation",
     version="1.0.0"
 )
